@@ -1,4 +1,4 @@
-// server.j
+// server.js
 
 //call needed packages
 var express = require('express');	// call express
