@@ -1,33 +1,36 @@
 // server.js
 
-//call needed packages
-var express = require('express');	// call express
-var app = express();	// define app
+// SETUP
+//======================================
+
+// call packages needed
+var express = require('express');	//call expresss
+var app = express();	//define our app with express
 var bodyParser = require('body-parser');
 
-//setup app to use bodyParser()
-//allow use of POST for API
-app.use(bodyParser.urlencoded({extended:true}));
+// configure app to use bodyParser()
+// this allows us to use POST commands
+app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
-var port = process.env.PORT || 8080;	//set port
+var port = process.env.PORT || 8080;	//sets our port
 
-// ROUTES FOR API
-// ============================================================================
-var router = express.Router();	//get express router
+// API ROUTES
+//=======================================
+var router = express.Router();	//new instance of express router
 
-//test
-router.get('/', function(req, res){
-				res.json({message: 'Welcome to Sportrakker API'});
+// test route
+router.get('/', function(req,res){
+				res.json({ message: 'Welcome to Sportrakker'});
 });
 
-// add more API routes here 
+// additional API routes here
 
-//Register routes
-//use prefix /api
-app.use('/api', router);
+// REGISTER ROUTES
+//========================================
+app.use('/api', router);	//all routes prefixed with /api
 
 // START SERVER
-// ===========================================================================
+//========================================
 app.listen(port);
-console.log('Sportrakker on port ' + port);
+console.log('Sportrakker works on port ' + port);
