@@ -34,6 +34,7 @@ router.get('/', function(req,res){
 });
 
 // additional API routes here
+// add post and get
 
 // routes that end in /player
 //----------------------------------------
