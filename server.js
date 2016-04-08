@@ -41,9 +41,9 @@ router.route('/player')
 				// create a player (accessed at POST http://localhost:808/api/player)
 				.post(function(req, res){
 								var player = new Player();	//new instance of PLayer model
-								bear.name = req.body.name;	//set the players name
+								player.name = req.body.name;	//set the players name
 								// save the player and check for errors
-								bear.save)function(err){
+								player.save(function(err){
 												if(err)
 																res.send(err);
 												res.jason({message: 'Player created'});

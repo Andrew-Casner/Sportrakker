@@ -7,4 +7,4 @@ var PlayerSchema = new Schema({
 				name: String
 });
 
-module.export = mongoose.model('Player', PlayerSchema);
+module.exports = mongoose.model('Player', PlayerSchema);
