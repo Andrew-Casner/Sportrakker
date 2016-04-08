@@ -7,6 +7,8 @@
 var express = require('express');	//call expresss
 var app = express();	//define our app with express
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');	//require to use DB
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds017070.mlab.com:17070/sportrakker');	//connect to mongoDB
 
 // configure app to use bodyParser()
 // this allows us to use POST commands
