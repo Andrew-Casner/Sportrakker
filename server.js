@@ -9,6 +9,7 @@ var app = express();	//define our app with express
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');	//require to use DB
 mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds017070.mlab.com:17070/sportrakker');	//connect to mongoDB
+var Player = require('./app/models/player');	//implament player api
 
 // configure app to use bodyParser()
 // this allows us to use POST commands
@@ -21,6 +22,12 @@ var port = process.env.PORT || 8080;	//sets our port
 //=======================================
 var router = express.Router();	//new instance of express router
 
+// middleware to use for all requests
+router.use(function(req, res, next){
+				console.log('Something is Happening...');
+				next();	//to get next routs
+});
+
 // test route
 router.get('/', function(req,res){
 				res.json({ message: 'Welcome to Sportrakker'});
@@ -28,6 +35,20 @@ router.get('/', function(req,res){
 
 // additional API routes here
 
+// routes that end in /player
+//----------------------------------------
+router.route('/player')
+				// create a player (accessed at POST http://localhost:808/api/player)
+				.post(function(req, res){
+								var player = new Player();	//new instance of PLayer model
+								bear.name = req.body.name;	//set the players name
+								// save the player and check for errors
+								bear.save)function(err){
+												if(err)
+																res.send(err);
+												res.jason({message: 'Player created'});
+								});
+				});
 // REGISTER ROUTES
 //========================================
 app.use('/api', router);	//all routes prefixed with /api
