@@ -39,7 +39,7 @@ router.get('/', function(req,res){
 // routes that end in /player
 //----------------------------------------
 router.route('/player')
-				// create a player (accessed at POST http://localhost:808/api/player)
+				// create a player (accessed at POST /api/player)
 				.post(function(req, res){
 								var player = new Player();	//new instance of PLayer model
 								player.name = req.body.name;	//set the players name
@@ -61,7 +61,9 @@ router.route('/player')
 				});
 // routes that end in /team
 //---------------------------------------
-
+router.route('/team')
+				//create a team (accessed at POST /api/team)
+				
 // REGISTER ROUTES
 //========================================
 app.use('/api', router);	//all routes prefixed with /api
