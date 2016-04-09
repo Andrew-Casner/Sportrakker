@@ -59,7 +59,9 @@ router.route('/player')
 												res.json(player);
 								});
 				});
-				
+// routes that end in /team
+//---------------------------------------
+
 // REGISTER ROUTES
 //========================================
 app.use('/api', router);	//all routes prefixed with /api
