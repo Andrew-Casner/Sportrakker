@@ -8,7 +8,7 @@ var express = require('express');	//call expresss
 var app = express();	//define our app with express
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');	//require to use DB
-mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds017070.mlab.com:17070/sportrakker');	//connect to mongoDB
+mongoose.connect('mongodb://test:test@ds017070.mlab.com:17070/sportrakker');	//connect to mongoDB
 var Player = require('./app/models/player');	//implament player api
 
 // configure app to use bodyParser()
@@ -47,9 +47,19 @@ router.route('/player')
 								player.save(function(err){
 												if(err)
 																res.send(err);
-												res.jason({message: 'Player created'});
+
+												res.json({message: 'Player created'});
 								});
 				});
+				.get(function(req, res){
+								Player.find(function(err, player){
+												if(err)
+																res.send(err);
+
+												res.json(player);
+								});
+				});
+				
 // REGISTER ROUTES
 //========================================
 app.use('/api', router);	//all routes prefixed with /api
