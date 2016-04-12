@@ -19,8 +19,7 @@ var port = process.env.PORT || 8080;	//sets our port
 
 // API ROUTES
 //=======================================
-var router = express.Router();	//new instance of express router
-
+app.use('/api', player);
 // REGISTER ROUTES
 //========================================
 
