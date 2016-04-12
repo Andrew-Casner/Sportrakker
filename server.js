@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 
 var port = process.env.PORT || 8080;	//sets our port
 
+var db = require('./config/db');
 // API ROUTES
 //=======================================
 app.use('/api', player);
