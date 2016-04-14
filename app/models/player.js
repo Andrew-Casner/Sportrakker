@@ -5,7 +5,8 @@ var Schema = mongoose.Schema;
 
 var PlayerSchema = new Schema({
 				// Basic Info
-				name: String,
+				firstName: String,
+				lastName: String,
 				isMale: Boolean,
 				height: Number, 
 				weight: Number,
