@@ -41,6 +41,22 @@ router.route('/player/:player_id').get(function(req, res){
 								}
 								res.json(player);
 				});
+				// Change name of player
+				Player.findById(req.params.player_id, function(err, player){
+								if(err){
+												return res.sender(err);
+								}
+								player.firstName= req.body.firstName;	// Update first name
+
+								//save data
+								player.save(function(err){
+												if(err){
+															return res.sender(err);
+												}
+												res.jason({Message: 'Player First Name Updated'});
+								});
+				});
 });
+
 // Export the router to be used in server.js
 module.exports = router;
