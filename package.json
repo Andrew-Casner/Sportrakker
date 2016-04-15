@@ -11,4 +11,10 @@
 				 "scripts": {
 				     "start": "node server.js && open http://localhost:8080"
 				}
+				"author": "Andrew Casner <a.casner@comcast.net>" 
+				"license": "MIT",
+				"bugs": {
+				"url": "https://github.com/Andrew-Casner/Sportrakker/issues"
+				},
+				"homepage": "https://github.com/Andrew-Casner/Sportrakker/#readme"
 }
