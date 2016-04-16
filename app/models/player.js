@@ -27,10 +27,12 @@ var PlayerSchema = new Schema({
 				shuffle: [Number],
 				shuffleTimeStamp: [Date],
 				vertical: [Number],
-				verticalTimeStamp: [Date]
+				verticalTimeStamp: [Date],
 				// Other Info
 				// Sports played
+				sports: [String],
 				// Teams on
+				teams: [String]
 });
 
 module.exports = mongoose.model('Player', PlayerSchema);
