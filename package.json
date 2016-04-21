@@ -6,12 +6,13 @@
 				"dependencies": {
 								"express": "~4.0.0",
 								"mongoose": "~3.6.13",
-								"body-parser": "~1.0.1"
+								"body-parser": "~1.0.1",
+								"mongoose-schema-extend": "~0.2.2"
 				},
 				 "scripts": {
 				     "start": "node server.js && open http://localhost:8080"
-				}
-				"author": "Andrew Casner <a.casner@comcast.net>" 
+				},
+				"author": "Andrew Casner <a.casner@comcast.net>",
 				"license": "MIT",
 				"bugs": {
 				"url": "https://github.com/Andrew-Casner/Sportrakker/issues"

@@ -8,7 +8,7 @@ var express = require('express');	//call expresss
 var app = express();	//define our app with express
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');	//require to use DB
-var player = require('./app/routes/player');
+var player = require('./app/player/routes_player');
 
 // configure app to use bodyParser()
 // this allows us to use POST commands
