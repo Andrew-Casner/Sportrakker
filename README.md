@@ -1,9 +1,11 @@
 # Sportrakker
 Nationwide Prep Sports App  
-To start and run server  
-`$npm install`  
-`$npm start`
+## Contribution
+1. Fork branch
+2. Clone forked repo `git clone` + repo url
+3. Install dependencies with `npm install`
+4. Start the server with `npm start`
 
-All rights reserved  
-Copyright Polysky Studios  
-Authors Andrew Casner and Jason Cyrus  
+## License
+All Rights Reserved  
+Copyright :copyright: 2016 Andrew Casner and Jason Cyrus
