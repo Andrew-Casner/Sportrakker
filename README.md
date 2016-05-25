@@ -8,9 +8,21 @@ Sportrakker is a prep sports suite that adds cross sport statistical tracking fo
 
 
 ## Contribution
-1. Create a new branch off of `develop`. If you are working on an issue please title the branch `issue-<issue#>-<issue title>`. If you are woking on anything else please title your branch `dev-<GitHub Username>-<title of work>` ie `dev-andrew-casner-newfeature`.
+1. Create a new branch off of `develop`. If you are working on an issue please title the branch `issue-<issue#>-<issue title>`.
 2. Commit to your branch until the task is compleated
 3. Submit pull request from `develop`. All pull requests will be handeled by the Admins.
+
+
+## Issue Trackking
+ALL new enchancements and bugs WILL be recorded in the Issues section of this repository. Work on this repo should not begin until an issue report is filled out for the task at hand.  
+
+
+1. Go to the [Issues tab](https://github.com/Andrew-Casner/Sportrakker/issues) and click the "New Issue" button located on the right.  
+2. Fill out the title in [Title case](https://en.wikipedia.org/wiki/Letter_case#Case_styles)  
+3. Add a detailed description of the issue  
+4. Add the appropriate [Lables](https://github.com/Andrew-Casner/Sportrakker/labels) and [Milestones](https://github.com/Andrew-Casner/Sportrakker/milestones) to the issue  
+5. Assign the issue to the correct user  
+6. Submit the issue  
 
 
 ## Starting the server
