@@ -8,9 +8,10 @@ Sportrakker is a prep sports suite that adds cross sport statistical tracking fo
 
 
 ## Contribution
-1. Fork branch
-2. Clone forked repo `git clone` + repo url
-3. Submit pull request for review
+1. Create a new branch off of `develop`. If you are working on an issue please title the branch `issue-<issue#>-<issue title>`. If you are woking on anything else please title your branch `dev-<GitHub Username>-<title of work>` ie `dev-andrew-casner-newfeature`.
+2. Commit to your branch until the task is compleated
+3. Submit pull request from `develop`. All pull requests will be handeled by the Adims.
+
 
 ## Starting the server
 1. Install dependencies with `npm install`
