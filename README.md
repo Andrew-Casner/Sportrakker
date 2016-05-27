@@ -8,7 +8,7 @@ Sportrakker is a prep sports suite that adds cross sport statistical tracking fo
 
 
 ## Contribution
-1. Create a new branch off of `develop`. If you are working on an issue please title the branch `issue-<issue#>-<issue title>`.
+1. Create a new branch off of `develop`. If you are working on an issue please title the branch `issue-<issue#>-<issue title>` ie `issue-1-react` please keep it all in lower case and do not include the '<>' signs.  
 2. Commit to your branch until the task is compleated
 3. Submit pull request from `develop`. All pull requests will be handeled by the Admins.
 
