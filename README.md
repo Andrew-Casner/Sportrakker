@@ -12,6 +12,13 @@ Sportrakker is a prep sports suite that adds cross sport statistical tracking fo
 2. Commit to your branch until the task is compleated
 3. Submit pull request from `develop`. All pull requests will be handeled by the Admins.
 
+## Workflow
+1. Create a new issue for what you will be working on.
+2. Create a new branch off of `develop` for your work.
+3. Commit frequently to your branch with descriptive comments. Try to keep each commit to one task. 
+4. Once the issue is resolved create a pull request from `develop`.
+5. After that the two admins must both give their approval before they will accept the pull and close the issue.
+
 
 ## Issue Trackking
 ALL new enchancements and bugs WILL be recorded in the Issues section of this repository. Work on this repo should not begin until an issue report is filled out for the task at hand.  
