@@ -3,7 +3,7 @@
 var express = require('express');
 var app = express();
 var router = express.Router();
-var Player = require('./player');
+var Player = require('../models/player');
 
 //===============API ROUTES==================
 

@@ -8,7 +8,7 @@
 								"mongoose-schema-extend": "~0.2.2"
 				},
 				 "scripts": {
-				     "start": "node server.js && open http://localhost:8080"
+				     "start": "node server.js"
 				},
 				"author": "Andrew Casner <a.casner@comcast.net>",
 				"bugs": {
