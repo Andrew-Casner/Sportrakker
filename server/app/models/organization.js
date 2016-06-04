@@ -9,11 +9,11 @@ var OrganizationSchema = new Schema({
 				type: String,  // Only High School for now
 				district: String,  //District the High School belongs to
 				// Location
-				adress1: String,  // Adress line 1
-				adress2: String,  // Adress line 2
+				address1: String,  // Adress line 1
+				address2: String,  // Adress line 2
 				zip: Number, 
 				state: String,  // Only the 2 letter abreviation
-				// Contact info
+				// Contact Info
 				phone: Number,
 				athleticDirector: String,  // ID of the athletic Director
 				// Advanced Info
