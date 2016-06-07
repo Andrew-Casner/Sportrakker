@@ -10,7 +10,7 @@ var TeamSchema = new Schema({
 				stateClass: String,  // Class the team compeats in, ie 5A
 				organization: String,  // id of affiliated organization
 				staff: [String],  // id of all staff
-				players: [String],  // id of all the players on the team
+				athletes: [String],  // id of all the athletes on the team
 				// Results from meets, needs to be discused
 				results: [String]  // id of all results
 
