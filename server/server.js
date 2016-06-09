@@ -12,6 +12,7 @@ var player = require('./app/routes/player');	//Need to remove later just a test
 var organization = require('./app/routes/organization'); 
 var team = require('./app/routes/team');
 var staff = require('./app/routes/staff');
+var athlete = require('./app/routes/athlete');
 
 // configure app to use bodyParser()
 // this allows us to use POST commands
@@ -28,6 +29,7 @@ app.use('/api', player);
 app.use('/api', organization);
 app.use('/api', team);
 app.use('/api', staff);
+app.use('/api', athlete);
 
 // REGISTER ROUTES
 //========================================
