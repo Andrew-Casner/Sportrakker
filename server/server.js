@@ -12,9 +12,9 @@ var mongoose = require('mongoose');	//require to use DB
 var player = require('./app/routes/player');
 var team = require('./app/routes/team');
 =======
-var player = require('./app/routes/player');	//Nede to remove later just a test
+var player = require('./app/routes/player');	//Need to remove later just a test
 var organization = require('./app/routes/organization'); 
->>>>>>> f5cfc2750dbf31ac54a88c53b25fdce9939a4e2e
+var team = require('./app/routes/team');
 
 // configure app to use bodyParser()
 // this allows us to use POST commands
@@ -28,11 +28,9 @@ mongoose.connect(db.url);	// connect to database
 // API ROUTES
 //=======================================
 app.use('/api', player);
-<<<<<<< HEAD
-app.use('/api', team);
-=======
 app.use('/api', organization);
->>>>>>> f5cfc2750dbf31ac54a88c53b25fdce9939a4e2e
+app.use('/api', team);
+
 // REGISTER ROUTES
 //========================================
 
