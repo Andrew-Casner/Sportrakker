@@ -1,0 +1,59 @@
+<div class="jumbotron text-center">
+	<h1>Create a New Meet</h1>
+</div>
+<div class="container">
+	<div class="row text-center">
+		<h2>Basic Info</h2>
+
+		<form [formGroup]="newMeetForm" (ngSubmit)="submitForm(newMeetForm.value)">
+			<div class="form-group row" [ngClass]="{'has-error':!newMeetForm.controls['meetName'].valid && newMeetForm.controls['meetName'].touched}">
+				<label for="meetName" class="col-sm-2 col-form-label">Meet Name</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="meetName" placeholder="Meet Name" [formControl]="newMeetForm.controls['meetName']">
+					<div *ngIf="newMeetForm.controls['meetName'].hasError('required') && newMeetForm.controls['meetName'].touched" class="alert alert-danger">Please include a title for your meet.</div>
+				</div>
+			</div>
+
+			<div class="form-group row" [ngClass]="{'has-error':!newMeetForm.controls['meetDescription'].valid && newMeetForm.controls['meetDescription'].touched}">
+				<label for="description" class="col-sm-2 col-form-label">Description</label>
+				<div class="col-sm-10">
+					<textarea type="test" class="form-control" id="description" placeholder="Meet Description" [formControl]="newMeetForm.controls['meetDescription']"></textarea>
+					<div *ngIf="newMeetForm.controls['meetDescription'].hasError('required') && newMeetForm.controls['meetDescription'].touched" class="alert alert-danger">Please include a description for your meet.</div>
+				</div>
+			</div>
+
+			<!--Need to put in the javascript to use google maps to get the location-->
+			<div class="form-group row" [ngClass]="{'has-error':!newMeetForm.controls['meetLocation'].valid && newMeetForm.controls['meetLocation'].touched}">
+				<label for="meetLocation" class="col-sm-2 col-form-label">Meet Location</label>
+				<div class="col-sm-10">
+					<input class="form-control"  id="meetLocation" placeholder="Meet Location" [formControl]="newMeetForm.controls['meetLocation']">
+					<div *ngIf="newMeetForm.controls['meetLocation'].hasError('required') && newMeetForm.controls['meetLocation'].touched" class="alert alert-danger">Please include a location for your meet.</div>
+				</div>
+			</div>
+
+			<div class="form-group row" [ngClass]="{'has-error':!newMeetForm.controls['meetDuration'].valid && newMeetForm.controls['meetDuration'].touched}">
+				<label for="duration" class="col-sm-2 col-form-label">Duration</label>
+				<div class="col-sm-4">
+					<div class="input-group">
+						<input type="number" min="1" placeholder='-' class="form-control" id="duration" [formControl]="newMeetForm.controls['meetDuration']"> 
+						<span class="input-group-addon">Days</span>
+					</div>
+					<div *ngIf="newMeetForm.controls['meetDuration'].hasError('pattern') && newMeetForm.controls['meetDuration'].touched" class="alert alert-danger">Please enter a positive number of days.</div>
+					<div *ngIf="newMeetForm.controls['meetDuration'].hasError('required') && newMeetForm.controls['meetDuration'].touched" class="alert alert-danger">Please enter a number of days.</div>
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="startDate" class="col-sm-2 col-form-label">Start Date</label>
+				<div class="col-sm-4">
+					<input type="date" class="form-control" id="startDate"> 
+				</div>
+				<label for="startTime" class="col-sm-2 col-form-label">Start Time of First Event</label>
+				<div class="col-sm-4">
+					<input type="time" class="form-control" id="startTime"> 
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary" [disabled]="!newMeetForm.valid">Create New Meet</button>
+		</form>
+	</div>
+</div>
