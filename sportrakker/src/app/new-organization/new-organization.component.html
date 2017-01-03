@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row text-center">
+		<h1>New Organization</h1>
+		<h2>Basic Info</h2>
+		<form [formGroup]="newOrgForm" (ngSubmit)="submitForm(newMeetForm.value)">
+			<div class="form-group row" [ngClass]="{'has-error':!newOrgForm.controls['name'].valid && newOrgForm.controls['name'].touched}">
+				<label for="orgName" class="col-sm-2 col-form-label">School Name</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="orgName" placeholder="School Name" [formControl]="newOrgForm.controls['name']">
+					<div *ngIf="newOrgForm.controls['name'].hasError('required') && newOrgForm.controls['name'].touched" class="alert alert-danger"> Please inclued your schools name</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
