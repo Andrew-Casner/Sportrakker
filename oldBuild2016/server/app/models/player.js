@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var PlayerSchema = new Schema({
-    // Basic Info
+	// Basic Info
 	firstName: String,
 	lastName: String,
 	isMale: Boolean,
