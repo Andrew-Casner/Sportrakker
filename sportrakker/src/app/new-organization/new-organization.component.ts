@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+var emailRegex = '^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$';
 
 @Component({
 	selector: 'app-new-organization',
@@ -16,14 +17,15 @@ export class NewOrganizationComponent implements OnInit {
 			'district' : [null, Validators.required],
 			// Location
 			'address1' : [null, Validators.required],
-			'address2' : [null, Validators.required],
+			'address2' : '',
 			'zip' : [null, Validators.required],
 			'state' : [null, Validators.required],
 			// Contact info
-			'phone' : [null, Validators.required],
-			'athleticDirectorEmail' : [null, Validators.required],
+			'phone' : [null, Validators.compose([Validators.required, Validators.minLength(10), Validators.pattern(/^\d+$/)])],
+			'athleticDirectorNameF' : [null, Validators.required],
+			'athleticDirectorNameL' : [null, Validators.required],
+			'athleticDirectorEmail' : [null, Validators.compose([Validators.required, Validators.pattern(emailRegex)])]
 			// Advanced info
-			'class' : [null, Validators.required]
 			
 		})
 	}

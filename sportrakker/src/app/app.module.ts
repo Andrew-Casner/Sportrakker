@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NewMeetComponent } from './new-meet/new-meet.component';
+import { NewOrganizationComponent } from './new-organization/new-organization.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NewMeetComponent
+    NewMeetComponent,
+    NewOrganizationComponent
   ],
   imports: [
     BrowserModule,
