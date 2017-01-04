@@ -17,7 +17,7 @@ Sportrakker is a prep sports suite that adds cross sport statistical tracking fo
 2. Create a new branch off of `develop` for your work.
 3. Commit frequently to your branch with descriptive comments. Try to keep each commit to one task. 
 4. Once the issue is resolved create a pull request from `develop`.
-5. After that the two admins must both give their approval before they will accept the pull and close the issue.
+5. After that a admin must give their approval before they will accept the pull and close the issue.
 
 
 ## Issue Trackking
@@ -32,11 +32,11 @@ ALL new enchancements and bugs WILL be recorded in the Issues section of this re
 6. Submit the issue  
 
 
-## Starting the server
+## Building the App
 1. Install dependencies with `npm install`
-2. Start the server with `npm start`
-3. Go to `localhost:8080` to find the running local server
-
+2. Build the app using `ng build`
+3. Test the app using `ng serve`
+3. Go to `localhost:4200` to find the running local app running
 
 ## License
 All Rights Reserved  
