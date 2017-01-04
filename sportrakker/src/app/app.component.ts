@@ -10,5 +10,5 @@ import { NewMeetComponent} from './new-meet/new-meet.component';
 })
 export class AppComponent {
 	title = 'Welcome to Sportrakker!';
-	description = 'We are currently under development, check back later for more content';
+	description = 'We are currently under development, check back later for more content.';
 }
