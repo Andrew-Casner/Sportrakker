@@ -9,5 +9,5 @@ import { NewMeetComponent} from './new-meet/new-meet.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'welcome to Sportrakker!';
+  title = 'Welcome to Sportrakker Dad!!!!!!!';
 }
